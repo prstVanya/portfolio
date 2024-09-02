@@ -1,0 +1,24 @@
+@font-face {
+  src: url('./JetBrainsMono-Regular.woff2') format('woff2'),
+       url('./JetBrainsMono-Regular.ttf') format('ttf');
+  font-family: 'JetBrains-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./JetBrainsMono-Medium.woff2') format('woff2');
+  font-family: 'JetBrains-Medium';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./JetBrainsMono-Bold.woff2') format('woff2');
+  font-family: 'JetBrains-Bold';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
