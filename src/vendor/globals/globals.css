@@ -1,0 +1,11 @@
+@import url('../fonts/fonts.css');
+
+:root {
+  --fonts-jetbrains-medium: 'JetBrains-Medium', 'Arial', sans-serif;
+  --fonts-jetbrains-regular: 'JetBrains-Regular', 'Arial', sans-serif;
+  --fonts-jetbrains-bold: 'JetBrains-Bold', 'Arial', sans-serif;
+  --background-color-light: rgb(255, 241, 247);
+  --background-color-dark: rgb(0, 0, 40);
+  --text-color-light: rgb(241, 178, 206);
+  --text-color-dark: rgb(255, 241, 247);
+}

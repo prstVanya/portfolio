@@ -1,4 +1,5 @@
 import { classNames } from "utils/classNames/classNames";
+import '../../pages/index.css';
 
 const App = () => {
   return (
