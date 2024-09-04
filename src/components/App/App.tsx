@@ -1,4 +1,4 @@
-import { classNames } from "utils/classNames/classNames";
+import { classNames } from 'utils/classNames/classNames';
 import '../../pages/index.css';
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
         <p className={classNames('test', {}, [])}>Hello world!</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default App;

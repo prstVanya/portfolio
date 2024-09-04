@@ -1,3 +1,4 @@
+import React from 'react';
 import App from 'components/App/App';
 import { createRoot } from 'react-dom/client';
 
@@ -6,5 +7,7 @@ const root = createRoot(
 );
 
 root.render(
-  <App />
-)
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
