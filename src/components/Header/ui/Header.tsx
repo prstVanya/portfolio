@@ -22,11 +22,11 @@ const Header = ({ isDark, toogleButton }: HeaderProps) => {
             );
           })}
         </nav>
-      <button onClick={toogleButton} className={classNames(cls.button, {}, [])}>
-        {isDark
-          ? <MoonSvg className={classNames(cls.svg, {}, [])} />
-          : <SunSvg className={classNames(cls.svg, {}, [])} />}
-      </button>
+        <button onClick={toogleButton} className={classNames(cls.button, {}, [])}>
+          {isDark
+            ? <MoonSvg className={classNames(cls.svg, {}, [])} />
+            : <SunSvg className={classNames(cls.svg, {}, [])} />}
+        </button>
       </div>
     </header>
   );
