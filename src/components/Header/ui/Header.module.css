@@ -1,0 +1,134 @@
+/* 
+  блок стилей для navbar
+*/
+
+.navbar {
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 89.745%;
+  max-width: 768px;
+  position: absolute;
+  bottom: 10%;
+}
+
+.wrapper {
+  height: 0;
+  padding-bottom: 18.29%;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  justify-content: space-between;
+  padding-top: 5%;
+  position: absolute;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 85%;
+}
+
+.item {
+  height: 0;
+  padding: 4.035%;
+  position: relative;
+  transition: transform .3s ease;
+  width: 4.035%;
+}
+
+.active {
+  transform: translateY(-25%);
+}
+
+.link {
+  inset: 0;
+  position: absolute;
+}
+
+.text {
+  bottom: 29%;
+  color: #FF4310;
+  display: block;
+  font-family: var(--fonts-jetbrains-regular);
+  font-size: clamp(7px, 2.5vw, 23px);
+  position: relative;
+  transition: left .3s ease;
+  width: 90%;
+}
+
+/*
+  стили для header
+*/
+
+.header {
+  width: 89.745%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  padding-top: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  margin-left: 40px;
+}
+
+.to {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: var(--fonts-jetbrains-regular);
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: border .1s cubic-bezier(.4, 0, .2,1);
+}
+
+.button:hover {
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.svg {
+  border: none;
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: background-image .2s ease-in-out;
+}
