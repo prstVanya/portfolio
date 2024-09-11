@@ -1,0 +1,35 @@
+.about {
+  width: 100%;
+  margin: 100px auto 0;
+}
+
+.mainContainer {
+  width: 89.47%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-family: var(--fonts-jetbrains-medium);
+  font-size: 46px;
+  margin: 0;
+  width: 50%;
+  padding: 0;
+}
+
+.subtitle {
+  font-family: var(--fonts-jetbrains-regular);
+  width: 70%;
+  margin: 0;
+}
+
+.sprite {
+  height: 450px;
+}

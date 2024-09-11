@@ -42,6 +42,17 @@ module.exports = {
       'no-param-reassign': 0,
       'array-callback-return': 0,
       'consistent-return': 0,
+      "react/no-unknown-property": [
+        "error",
+        {
+          "ignore": [
+            "position",
+            "args",
+            "text",
+            "fontFace",
+          ]
+        }
+      ]
     },
   };
   
