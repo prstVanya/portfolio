@@ -2,6 +2,7 @@ import { classNames } from 'utils/classNames/classNames';
 import '../../pages/index.css';
 import { Header } from 'components/Header';
 import { useState, useEffect } from 'react';
+import Main from 'components/Main/Main';
 
 const App = () => {
   const [changeBackground, setChangeBackround] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
     <div className={classNames('app', {}, [])}>
       <div className={classNames('wrapper', {}, [])}>
         <Header toogleButton={toogleButton} isDark={changeBackground} />
+        <Main />
       </div>
     </div>
   );
