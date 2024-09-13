@@ -74,6 +74,8 @@
   width: 89.745%;
   margin: 0 auto;
   display: flex;
+  background-color: var(--background-color-dark);
+  color: var(--text-color-light);
   justify-content: space-between;
 }
 
@@ -83,6 +85,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  background-color: var(--background-color-dark);
 }
 
 .nav {
@@ -101,6 +104,12 @@
   color: black;
   text-transform: uppercase;
   text-decoration: none;
+  color: var(--text-color-light);
+  transition: color .3s ease;
+}
+
+.to:hover {
+  color: rgb(0, 247, 255);
 }
 
 .button {
