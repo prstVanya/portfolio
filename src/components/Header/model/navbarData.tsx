@@ -19,12 +19,6 @@ interface INavbarData {
   position: string;
 }
 
-interface IHeaderData {
-  id: number;
-  to: string;
-  text: string;
-}
-
 export const navbarData: INavbarData[] = [
   {
     to: '',
@@ -60,33 +54,5 @@ export const navbarData: INavbarData[] = [
     activeIcon: <ProfileIconActive className={cls.icon} />,
     text: 'Contacts',
     position: '77.75%',
-  },
-];
-
-export const headerData: IHeaderData[] = [
-  {
-    id: 1,
-    to: '#',
-    text: 'Header',
-  },
-  {
-    id: 2,
-    to: '#',
-    text: 'About',
-  },
-  {
-    id: 3,
-    to: '#',
-    text: 'Study',
-  },
-  {
-    id: 4,
-    to: '#',
-    text: 'Projects',
-  },
-  {
-    id: 5,
-    to: '#',
-    text: 'Contacts',
   },
 ];
