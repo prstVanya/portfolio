@@ -19,13 +19,6 @@ interface INavbarData {
   position: string;
 }
 
-interface IHeaderData {
-  id: number;
-  text: string;
-  positionTop: string;
-  positionLeft: string;
-}
-
 export const navbarData: INavbarData[] = [
   {
     to: '',

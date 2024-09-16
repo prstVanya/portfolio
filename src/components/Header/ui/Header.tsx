@@ -1,12 +1,10 @@
 import { classNames } from 'utils/classNames/classNames';
-import cls from './Header.module.css';
 import Logo from 'assets/images/icons/logo.svg';
-import { useRef } from 'react';
+import cls from './Header.module.css';
 
 interface HeaderProps {
   className?: string;
-};
-
+}
 
 const Header = ({ className }: HeaderProps) => {
   return (
