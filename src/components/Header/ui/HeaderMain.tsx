@@ -2,12 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from './Header';
 import { Navbar } from './NavBar';
 
-interface HeaderMainProps {
-  isDark: boolean;
-  toogleButton: () => void;
-}
-
-export const HeaderMain = ({ isDark, toogleButton }: HeaderMainProps) => {
+export const HeaderMain = () => {
   const [isHeader, setIsHeader] = useState(window.innerWidth >= 638);
 
   useEffect(() => {
@@ -24,7 +19,7 @@ export const HeaderMain = ({ isDark, toogleButton }: HeaderMainProps) => {
 
   return (
     <>
-      {isHeader ? <Header toogleButton={toogleButton} isDark={isDark} /> : <Navbar />}
+      {isHeader ? <Header /> : <Navbar />}
     </>
   );
 };
