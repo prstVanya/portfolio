@@ -46,6 +46,7 @@
     "postcss-lit": "^1.1.1",
     "postcss-loader": "^8.1.1",
     "postcss-preset-env": "^10.0.2",
+    "react-intersection-observer": "^9.13.1",
     "style-loader": "^4.0.0",
     "three": "^0.168.0",
     "three-spritetext": "^1.8.2",
