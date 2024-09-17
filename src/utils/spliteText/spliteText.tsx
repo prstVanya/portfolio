@@ -33,7 +33,7 @@ const SpliteText = ({ children }: ISpliteTextData) => {
       if (iteration > text.length) {
         clearInterval(interval);
       }
-    }, 60);
+    }, 90);
   }
 
   useEffect(() => {

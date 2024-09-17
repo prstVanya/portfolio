@@ -13,8 +13,8 @@ export const About = ({ className }: IAboutData) => {
   return (
     <section className={classNames(cls.about, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
+        <SpliteText>{aboutTitle}</SpliteText>
         <div className={classNames(cls.info)}>
-          <SpliteText>{aboutTitle}</SpliteText>
           <p className={classNames(cls.subtitle, {}, [])}>
             {aboutSubtitle}
           </p>

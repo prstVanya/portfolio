@@ -5,31 +5,31 @@
 
 .mainContainer {
   width: 89.47%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content auto;
+  position: relative;
+  gap: 0 1rem;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.title {
-  font-family: var(--fonts-jetbrains-medium);
-  font-size: 46px;
-  margin: 0;
-  width: 50%;
-  padding: 0;
+  grid-column: 1 / 7;
+  width: 100%;
 }
 
 .subtitle {
   font-family: var(--fonts-jetbrains-regular);
-  width: 70%;
   margin: 0;
+  padding: 20px 0 0 0;
+  font-size: 1.333rem;
+  width: 100%;
 }
 
 .sprite {
   height: 450px;
+  grid-column: 7 / 13;
+  width: 100%;
 }

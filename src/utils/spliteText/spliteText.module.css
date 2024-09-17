@@ -5,6 +5,7 @@
   width: 50%;
   text-transform: uppercase;
   padding: 0;
+  grid-column: 1 / 13;
 }
 
 .paragraph {
