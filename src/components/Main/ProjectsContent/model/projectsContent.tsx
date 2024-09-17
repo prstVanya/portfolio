@@ -19,7 +19,7 @@ export const projectsData: TProjectsSection[] = [
     text: `Мобильного приложения Международной премии КАРДО. Данное приложение выполняется 
     в рамках Хакатона+ КАРДО. Из функционала была: верстка, регистрация и авторизация, онбординг.`,
     gitHubLink: 'https://github.com/Kirill-Begej/kardo-frontend',
-    type: 'Mesto',
+    type: 'KARDO',
   },
   {
     image: movieProject,

@@ -9,10 +9,12 @@ interface IProjectsContent {
 }
 
 export const ProjectsContent = ({ className, data, filter }: IProjectsContent) => {
+  const filteredData = data.filter((project) => project.type === filter);
+
   return (
     <ul className={classNames(cls.content, {}, [className])}>
-      {(filter === 'Mesto' || filter === 'KARDO' || filter === 'Movie' || filter === 'Portfolio') ? (
-        data.map((c, i) => (
+      {filteredData.length > 0 ? (
+        filteredData.map((c, i) => (
           <li className={classNames(cls.item, {}, [])} key={i}>
             <div className={classNames(cls.block, {}, [])}>
               <img className={classNames(cls.image, {}, [])} src={c.image} alt={c.title} />
