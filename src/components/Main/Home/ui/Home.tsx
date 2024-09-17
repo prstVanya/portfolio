@@ -1,6 +1,7 @@
 import { classNames } from 'utils/classNames/classNames';
 import cls from './Home.module.css';
 import { textData } from '../models/textsForHome';
+import SpliteText from 'utils/spliteText/spliteText';
 
 interface IHomeData {
   className?: string;
