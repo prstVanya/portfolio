@@ -1,9 +1,9 @@
 import { classNames } from 'utils/classNames/classNames';
 import { Canvas } from '@react-three/fiber';
 import SkillsAnimation from 'utils/spriteText/spriteText';
+import SpliteText from 'utils/spliteText/spliteText';
 import cls from './About.module.css';
 import { aboutSubtitle, aboutTitle } from './models/aboutData';
-import SpliteText from 'utils/spliteText/spliteText';
 
 interface IAboutData {
   className?: string;
