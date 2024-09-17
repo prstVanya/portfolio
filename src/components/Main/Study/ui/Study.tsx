@@ -3,6 +3,7 @@ import { classNames } from 'utils/classNames/classNames';
 import { ProjectsContent } from 'components/Main/ProjectsContent';
 import { useState } from 'react';
 import { TProjectsSection } from 'types';
+import SpliteText from 'utils/spliteText/spliteText';
 import cls from './Study.module.css';
 
 interface IStudyData {
@@ -16,7 +17,7 @@ export const Study = ({ className, data }: IStudyData) => {
   return (
     <section className={classNames(cls.section, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
-        <h1 className={classNames(cls.title, {}, [])}>Projects</h1>
+        <SpliteText>Projects</SpliteText>
         <NavBarContent titles={['Mesto', 'KARDO', 'Movie', 'Portfolio', 'Blog']} setFilter={setFilter} />
         <ProjectsContent data={data} filter={filter} />
       </div>

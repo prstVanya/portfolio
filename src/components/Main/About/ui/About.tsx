@@ -1,6 +1,7 @@
 import { classNames } from 'utils/classNames/classNames';
 import { Canvas } from '@react-three/fiber';
 import SkillsAnimation from 'utils/spriteText/spriteText';
+import SpliteText from 'utils/spliteText/spliteText';
 import cls from './About.module.css';
 import { aboutSubtitle, aboutTitle } from './models/aboutData';
 
@@ -13,7 +14,7 @@ export const About = ({ className }: IAboutData) => {
     <section className={classNames(cls.about, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
         <div className={classNames(cls.info)}>
-          <h2 className={classNames(cls.title, {}, [])}>{aboutTitle}</h2>
+          <SpliteText>{aboutTitle}</SpliteText>
           <p className={classNames(cls.subtitle, {}, [])}>
             {aboutSubtitle}
           </p>
