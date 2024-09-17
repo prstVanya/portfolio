@@ -27,6 +27,9 @@ const Header = ({ className }: HeaderProps) => {
             <a className={classNames(cls.to, {}, [])}>Footer</a>
           </li>
         </ul>
+        <div className={classNames(cls.ref, {}, [])}>
+          <div className={classNames(cls.point, {}, [])}></div>
+        </div>
       </div>
     </header>
   );
