@@ -8,8 +8,8 @@ export const GitHubStatistics = () => {
       <h3 className={classNames(cls.statsHeading, {}, [])}>GitHub</h3>
       <GitHubCalendar
         username='VanyaGachist2'
-        blockSize={15}
-        blockMargin={5}
+        blockSize={16}
+        blockMargin={6}
         fontSize={16}
       />
     </div>
