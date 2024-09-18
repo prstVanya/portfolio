@@ -40,12 +40,12 @@
 
 .heading {
   font-family: var(--fonts-jetbrains-medium);
-  font-size: 16px;
+  font-size: 1.333rem;
 }
 
 .subtitle {
   font-family: var(--fonts-jetbrains-regular);
-  font-size: 14px;
+  font-size: 1.20rem;
   margin: 0;
   padding: 0;
 }
@@ -54,7 +54,7 @@
   text-decoration: none;
   color: rgb(241, 178, 206);
   font-family: var(--fonts-jetbrains-regular);
-  font-size: 14px;
+  font-size: 1.20rem;
   margin: 0;
 }
 

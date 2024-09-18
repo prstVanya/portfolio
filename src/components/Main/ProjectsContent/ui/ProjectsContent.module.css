@@ -3,7 +3,7 @@
   margin: 0 auto;
   list-style: none;
   padding: 0;
-  height: 60vh;
+  height: 25vh;
 }
 
 .item {
@@ -49,7 +49,7 @@
 
 .heading {
   font-family: var(--fonts-jetbrains-medium);
-  font-size: 24px;
+  font-size: 1.333rem;
   width: 100%;
   margin: 0;
   padding: 0;
