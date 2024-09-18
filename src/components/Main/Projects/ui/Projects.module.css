@@ -8,4 +8,56 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  width: 50%;
+  background-color: rgb(0, 0, 87);
+  color: rgb(241, 178, 206);
+  border-radius: 8px;
+  transition: box-shadow .2s ease;
+}
+
+.card:hover {
+  box-shadow:  5px 5px 15px #001a4a,
+              -5px -5px 15px #002364;
+}
+
+.heading {
+  font-family: var(--fonts-jetbrains-medium);
+  font-size: 16px;
+}
+
+.subtitle {
+  font-family: var(--fonts-jetbrains-regular);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(241, 178, 206);
+  font-family: var(--fonts-jetbrains-regular);
+  font-size: 14px;
+  margin: 0;
+}
+
+.link:hover {
+  color: rgb(0, 247, 255);
 }
