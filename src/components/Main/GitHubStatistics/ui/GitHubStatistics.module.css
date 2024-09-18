@@ -3,6 +3,14 @@
   padding: 0 0 20px;
   font-family: var(--fonts-jetbrains-medium);
   font-size: 1.333rem;
+  max-width: 79px;
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-color-light);
+}
+
+.statsHeading:hover {
+  text-decoration: underline;
 }
 
 .github {

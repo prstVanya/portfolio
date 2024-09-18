@@ -5,7 +5,11 @@ import cls from './GitHubStatistics.module.css';
 export const GitHubStatistics = () => {
   return (
     <div className={classNames(cls.github, {}, [])}>
-      <h3 className={classNames(cls.statsHeading, {}, [])}>GitHub</h3>
+      <a
+        href='https://github.com/VanyaGachist2'
+        target='_blank'
+        className={classNames(cls.statsHeading, {}, [])} rel="noreferrer"
+      >GitHub</a>
       <GitHubCalendar
         username='VanyaGachist2'
         blockSize={16}
