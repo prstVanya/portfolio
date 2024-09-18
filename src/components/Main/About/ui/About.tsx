@@ -2,9 +2,9 @@ import { classNames } from 'utils/classNames/classNames';
 import { Canvas } from '@react-three/fiber';
 import SkillsAnimation from 'utils/spriteText/spriteText';
 import SpliteText from 'utils/spliteText/spliteText';
+import GitHubCalendar from 'react-github-calendar';
 import cls from './About.module.css';
 import { aboutSubtitle, aboutTitle } from './models/aboutData';
-import GitHubCalendar from "react-github-calendar";
 
 interface IAboutData {
   className?: string;
