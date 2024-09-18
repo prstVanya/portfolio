@@ -1,6 +1,6 @@
-import cls from './GitHubStatistics.module.css';
 import { classNames } from 'utils/classNames/classNames';
 import GitHubCalendar from 'react-github-calendar';
+import cls from './GitHubStatistics.module.css';
 
 export const GitHubStatistics = () => {
   return (
@@ -13,5 +13,5 @@ export const GitHubStatistics = () => {
         fontSize={16}
       />
     </div>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
-import cls from './Statistics.module.css';
 import { classNames } from 'utils/classNames/classNames';
 import Age from 'utils/stats/stats';
+import cls from './Statistics.module.css';
 
 interface IStatisticsData {
   className?: string;
@@ -35,5 +35,5 @@ export const Statistics = ({ className }: IStatisticsData) => {
           </li>
         </ul>
       </div>
-  )
-}
+  );
+};
