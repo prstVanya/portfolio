@@ -1,0 +1,11 @@
+.education {
+  width: 100%;
+  margin: 100px auto 0;
+}
+
+.mainContainer {
+  width: 89.47%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
