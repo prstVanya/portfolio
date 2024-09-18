@@ -7,14 +7,6 @@ interface IHomeData {
 }
 
 export const Home = ({ className }: IHomeData) => {
-  let currentAge = 20;
-  const currentDay = new Date();
-  const getDay = currentDay.getDate();
-  const getMonth = currentDay.getMonth() + 1;
-  if (getDay === 5 && getMonth === 11) {
-    currentAge += 1;
-  }
-
   return (
     <section className={classNames(cls.section, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
@@ -25,7 +17,7 @@ export const Home = ({ className }: IHomeData) => {
                 className={classNames(cls.paragraph, {}, [])}
                 key={t.id}
               >
-                {t.id === 3 ? `${t.text} ${currentAge}` : t.text}
+                {t.text}
               </p>
             );
           })}
