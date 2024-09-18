@@ -5,6 +5,8 @@ import SpliteText from 'utils/spliteText/spliteText';
 import GitHubCalendar from 'react-github-calendar';
 import cls from './About.module.css';
 import { aboutSubtitle, aboutTitle } from './models/aboutData';
+import { Statistics } from 'components/Main/Statistics';
+import { GitHubStatistics } from 'components/Main/GitHubStatistics';
 
 interface IAboutData {
   className?: string;
@@ -25,14 +27,8 @@ export const About = ({ className }: IAboutData) => {
             <SkillsAnimation />
           </Canvas>
         </div>
-        <div className={classNames(cls.calendar, {}, [])}>
-          <GitHubCalendar
-            username='VanyaGachist2'
-            blockSize={15}
-            blockMargin={5}
-            fontSize={16}
-          />
-        </div>
+        <Statistics />
+        <GitHubStatistics />
       </div>
     </section>
   );
