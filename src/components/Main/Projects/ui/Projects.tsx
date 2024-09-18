@@ -1,6 +1,6 @@
 import SpliteText from 'utils/spliteText/spliteText';
-import cls from './Projects.module.css';
 import { classNames } from 'utils/classNames/classNames';
+import cls from './Projects.module.css';
 
 export const Projects = () => {
   return (
@@ -17,10 +17,10 @@ export const Projects = () => {
               <div className={classNames(cls.logo, {}, [])}>
                 <img />
               </div>
-              <a 
-                href='https://cfuv.ru/?ysclid=m17sdd4udt251873995' 
-                target='_blank' 
-                className={classNames(cls.link, {}, [])}>Link to site</a>
+              <a
+                href='https://cfuv.ru/?ysclid=m17sdd4udt251873995'
+                target='_blank'
+                className={classNames(cls.link, {}, [])} rel="noreferrer">Link to site</a>
             </div>
           </li>
           <li className={classNames(cls.card, {}, [])}>
@@ -32,14 +32,14 @@ export const Projects = () => {
               <div className={classNames(cls.logo, {}, [])}>
                 <img />
               </div>
-              <a 
-                href='https://practicum.yandex.ru' 
-                target='_blank' 
-                className={classNames(cls.link, {}, [])}>Link to site</a>
+              <a
+                href='https://practicum.yandex.ru'
+                target='_blank'
+                className={classNames(cls.link, {}, [])} rel="noreferrer">Link to site</a>
             </div>
           </li>
         </ul>
       </div>
     </section>
-  )
-}
+  );
+};
