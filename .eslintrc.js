@@ -50,6 +50,9 @@ module.exports = {
             "args",
             "text",
             "fontFace",
+            "intensity",
+            "object",
+            "no-nested-ternary",
           ]
         }
       ]

@@ -1,7 +1,7 @@
 import SpliteText from 'utils/spliteText/spliteText';
 import { classNames } from 'utils/classNames/classNames';
-import cls from './Projects.module.css';
 import YandexLogo from 'assets/images/icons/yandex.svg';
+import cls from './Projects.module.css';
 
 export const Projects = () => {
   return (
@@ -12,7 +12,7 @@ export const Projects = () => {
           <li className={classNames(cls.card, {}, [])}>
             <h3 className={classNames(cls.heading, {}, [])}>CFU</h3>
             <p className={classNames(cls.subtitle, {}, [])}>
-              Main university in Crimea: 
+              Main university in Crimea:
             </p>
             <div className={classNames(cls.info, {}, [])}>
             <div className={classNames(cls.logo, {}, [])}>
@@ -28,7 +28,7 @@ export const Projects = () => {
           <li className={classNames(cls.card, {}, [])}>
             <h3 className={classNames(cls.heading, {}, [])}>Yandex Practicum</h3>
             <p className={classNames(cls.subtitle, {}, [])}>
-              Additional training in the web developer course:  
+              Additional training in the web developer course:
             </p>
             <div className={classNames(cls.info, {}, [])}>
               <div className={classNames(cls.logo, {}, [])}>

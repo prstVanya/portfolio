@@ -1,5 +1,7 @@
 import { classNames } from 'utils/classNames/classNames';
 import Typist from 'react-typist-component';
+import { Canvas } from '@react-three/fiber';
+import ThreeModel from 'utils/threeModel/threeModel';
 import cls from './Home.module.css';
 import { textData } from '../models/textsForHome';
 
@@ -25,6 +27,11 @@ export const Home = ({ className }: IHomeData) => {
             })}
           </div>
         </Typist>
+        <div className={classNames(cls.canvas, {}, [])}>
+            <Canvas className={classNames(cls.camare, {}, [])} camera={{ position: [0, 7, 5] }}>
+              <ThreeModel />
+            </Canvas>
+        </div>
       </div>
     </section>
   );
