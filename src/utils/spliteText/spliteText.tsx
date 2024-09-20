@@ -18,6 +18,7 @@ const SpliteText = ({ children }: ISpliteTextData) => {
 
   function animate() {
     let iteration = 0;
+
     const interval = setInterval(() => {
       setHeader('');
       let newStr = '';
@@ -28,12 +29,18 @@ const SpliteText = ({ children }: ISpliteTextData) => {
         }
         newStr += char;
       });
+
       setHeader(newStr);
       iteration += 1;
+
       if (iteration > text.length) {
         clearInterval(interval);
       }
     }, 90);
+  }
+
+  const handleAnimate = () => {
+    animate();
   }
 
   useEffect(() => {
@@ -43,7 +50,7 @@ const SpliteText = ({ children }: ISpliteTextData) => {
   }, [inView]);
 
   return (
-    <h2 ref={ref} className={classNames(cls.title, {}, [])}>
+    <h2 onMouseEnter={handleAnimate} ref={ref} className={classNames(cls.title, {}, [])}>
       {header}
     </h2>
   );
