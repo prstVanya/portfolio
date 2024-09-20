@@ -38,7 +38,7 @@ export const Footer = ({ className }: IFooterData) => {
           <Telegram />
         </a>
       </nav>
-      <p className={classNames(cls.paragraph, {}, [])}>{`${'@ VanyaGachist'} ${year}`}</p>
+      <p className={classNames(cls.paragraph, {}, [])}>{`${'@ VanyaGachist'} ${year} 🍺`}</p>
     </footer>
   );
 };
