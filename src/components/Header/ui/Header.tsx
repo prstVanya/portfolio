@@ -6,7 +6,7 @@ interface HeaderProps {
   className?: string;
 }
 
-const Header = ({ className }: HeaderProps) => {
+export const Header = ({ className }: HeaderProps) => {
   return (
     <header className={classNames(cls.header, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
@@ -34,5 +34,3 @@ const Header = ({ className }: HeaderProps) => {
     </header>
   );
 };
-
-export default Header;
