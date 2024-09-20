@@ -11,6 +11,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content auto;
   grid-gap: 1rem;
   background-color: var(--background-color-dark);
   color: var(--text-color-light);
@@ -39,15 +40,17 @@
 
 @media screen and (max-width: 969px) {
   .mainContainer {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    height: 100vh;
+    margin: 0 auto;
   }
 
   .texts {
-    order: 1;
     width: 100%;
+    grid-row: 1 / 4;
+    grid-column: 1 / 12;
   }
 
   .paragraph {
@@ -55,8 +58,10 @@
   }
 
   .canvas {
-    padding: 30px 0 100px;
-    height: 50vh;
+    padding: 100px 0 50px;
+    height: 100vh;
+    grid-row: 4 / 10;
+    grid-column: 1 / 12;
     order: 2;
   }
 }
