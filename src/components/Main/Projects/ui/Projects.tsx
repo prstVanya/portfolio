@@ -11,7 +11,8 @@ export const Projects = () => {
           <li className={classNames(cls.card, {}, [])}>
             <h3 className={classNames(cls.heading, {}, [])}>CFU</h3>
             <p className={classNames(cls.subtitle, {}, [])}>
-              Main university in Crimea
+              Main university in Crimea: 
+              <span className={classNames(cls.span, {}, [])}>01.09.2021 - ??</span>
             </p>
             <div className={classNames(cls.info, {}, [])}>
               <div className={classNames(cls.logo, {}, [])}>
@@ -26,7 +27,8 @@ export const Projects = () => {
           <li className={classNames(cls.card, {}, [])}>
             <h3 className={classNames(cls.heading, {}, [])}>Yandex Practicum</h3>
             <p className={classNames(cls.subtitle, {}, [])}>
-              Additional training in the web developer course
+              Additional training in the web developer course:  
+              <span className={classNames(cls.span, {}, [])}>28.04.2023 - 23.04.2024</span>
             </p>
             <div className={classNames(cls.info, {}, [])}>
               <div className={classNames(cls.logo, {}, [])}>

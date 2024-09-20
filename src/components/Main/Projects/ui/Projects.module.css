@@ -50,6 +50,10 @@
   padding: 0;
 }
 
+.span {
+  color: var(--text-hover-light);
+}
+
 .link {
   text-decoration: none;
   color: rgb(241, 178, 206);
@@ -59,5 +63,11 @@
 }
 
 .link:hover {
-  color: rgb(0, 247, 255);
+  color: var(--text-hover-light);
+}
+
+@media screen and (max-width: 706px) {
+  .education {
+    margin-top: 300px;
+  }
 }

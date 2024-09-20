@@ -6,7 +6,7 @@ interface ITextData {
 export const textData: ITextData[] = [
   {
     id: 1,
-    text: '// VanyaGachist.',
+    text: '🍺 VanyaGachist.',
   },
   {
     id: 2,

@@ -74,7 +74,7 @@
 }
 
 .link:hover {
-  color: rgb(0, 200, 255);
+  color: var(--text-hover-light);
 }
 
 .nothing {
@@ -83,4 +83,21 @@
   font-family: var(--fonts-jetbrains-medium);
   margin: 0 auto;
   padding: 0;
+}
+
+@media screen and (max-width: 706px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    margin-top: 20px;
+  }
 }

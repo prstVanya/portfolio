@@ -12,18 +12,18 @@ export const Home = ({ className }: IHomeData) => {
     <section className={classNames(cls.section, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
         <Typist>
-        <div className={classNames(cls.texts, {}, [])}>
-          {textData.map((t) => {
-            return (
-              <p
-                className={classNames(cls.paragraph, {}, [])}
-                key={t.id}
-              >
-                {t.text}
-              </p>
-            );
-          })}
-        </div>
+          <div className={classNames(cls.texts, {}, [])}>
+            {textData.map((t) => {
+              return (
+                <p
+                  className={classNames(cls.paragraph, {}, [])}
+                  key={t.id}
+                >
+                  {t.text}
+                </p>
+              );
+            })}
+          </div>
         </Typist>
       </div>
     </section>

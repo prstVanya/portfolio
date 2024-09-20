@@ -29,3 +29,19 @@
   font-family: var(--fonts-jetbrains-bold);
   font-size: 52px;
 }
+
+@media screen and (max-width: 969px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texts {
+    width: 100%;
+  }
+
+  .paragraph {
+    font-size: 38px;
+  }
+}
