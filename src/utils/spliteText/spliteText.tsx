@@ -41,7 +41,7 @@ const SpliteText = ({ children }: ISpliteTextData) => {
 
   const handleAnimate = () => {
     animate();
-  }
+  };
 
   useEffect(() => {
     if (inView) {
