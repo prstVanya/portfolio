@@ -2,9 +2,9 @@ import { classNames } from 'utils/classNames/classNames';
 import Typist from 'react-typist-component';
 import { Canvas } from '@react-three/fiber';
 import ThreeModel from 'utils/threeModel/threeModel';
+import { useEffect, useState } from 'react';
 import cls from './Home.module.css';
 import { textData } from '../models/textsForHome';
-import { useEffect, useState } from 'react';
 
 interface IHomeData {
   className?: string;
@@ -20,7 +20,7 @@ export const Home = ({ className }: IHomeData) => {
 
     return () => {
       clearInterval(interval);
-    }
+    };
   }, [isCanvasVisible]);
 
   return (
