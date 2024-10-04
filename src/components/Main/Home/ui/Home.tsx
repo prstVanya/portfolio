@@ -4,12 +4,25 @@ import { Canvas } from '@react-three/fiber';
 import ThreeModel from 'utils/threeModel/threeModel';
 import cls from './Home.module.css';
 import { textData } from '../models/textsForHome';
+import { useEffect, useState } from 'react';
 
 interface IHomeData {
   className?: string;
 }
 
 export const Home = ({ className }: IHomeData) => {
+  const [isCanvasVisible, setIsCanvasVisible] = useState(false);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setIsCanvasVisible(true);
+    }, 3500);
+
+    return () => {
+      clearInterval(interval);
+    }
+  }, [isCanvasVisible]);
+
   return (
     <section className={classNames(cls.section, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
@@ -27,7 +40,7 @@ export const Home = ({ className }: IHomeData) => {
             })}
           </div>
         </Typist>
-        <div className={classNames(cls.canvas, {}, [])}>
+        <div className={classNames(cls.canvas, { [cls.active]: isCanvasVisible }, [])}>
             <Canvas className={classNames(cls.camare, {}, [])} camera={{ position: [0, 7, 5] }}>
               <ThreeModel />
             </Canvas>
