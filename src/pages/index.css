@@ -16,6 +16,7 @@
   width: 100%;
   background-color: var(--background-color-dark);
   color: var(--text-color-light);
+  position: relative;
 }
 
 .test {

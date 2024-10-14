@@ -56,22 +56,24 @@
   opacity: .7;
 }
 
-.button {
+.navButton {
+  display: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
   margin-left: auto;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  transition: border .1s cubic-bezier(.4, 0, .2,1);
 }
 
-.button:hover {
-  border: 2px solid white;
-  cursor: pointer;
-  border-radius: 8px;
+@media screen and (max-width: 602px) {
+  .nav {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .navButton {
+    display: block;
+  }
 }

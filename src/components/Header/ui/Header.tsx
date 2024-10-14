@@ -1,15 +1,18 @@
 import { classNames } from 'utils/classNames/classNames';
 import Logo from 'assets/images/icons/logo.svg';
-import ChangeSun from 'utils/changeSun/changeSun';
+import ChangeThemeButton from 'utils/ChangeThemeButton/ChangeThemeButton';
 import cls from './Header.module.css';
 
 interface HeaderProps {
   className?: string;
   toogleButton: () => void;
   isTrue: boolean;
+  openNav: () => void;
 }
 
-export const Header = ({ className, toogleButton, isTrue }: HeaderProps) => {
+export const Header = ({
+  className, toogleButton, isTrue, openNav,
+}: HeaderProps) => {
   return (
     <header className={classNames(cls.header, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
@@ -22,9 +25,8 @@ export const Header = ({ className, toogleButton, isTrue }: HeaderProps) => {
           <a className={classNames(cls.to, {}, [])}>Education</a>
           <a className={classNames(cls.to, {}, [])}>Info</a>
         </nav>
-        <button onClick={toogleButton} className={classNames(cls.button, {}, [])}>
-          <ChangeSun isTrue={isTrue} />
-        </button>
+        <ChangeThemeButton isTrue={isTrue} toogleButton={toogleButton} />
+        <button onClick={openNav} className={classNames(cls.navButton, {}, [])}></button>
       </div>
     </header>
   );
