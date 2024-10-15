@@ -14,3 +14,10 @@
   font-family: var(--fonts-jetbrains-bold);
   font-size: 69px;
 }
+
+@media screen and (max-width: 889px) {
+  .title {
+    width: 100%;
+  }
+}
+

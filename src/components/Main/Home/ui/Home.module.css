@@ -58,7 +58,7 @@
   .texts {
     width: 100%;
     grid-row: 1 / 4;
-    grid-column: 1 / 12;
+    grid-column: 2 / 12;
   }
 
   .paragraph {
@@ -71,5 +71,11 @@
     grid-row: 4 / 10;
     grid-column: 1 / 12;
     order: 2;
+  }
+
+  @media screen and (max-width: 547px) {
+    .paragraph {
+      font-size: 30px;
+    }
   }
 }
