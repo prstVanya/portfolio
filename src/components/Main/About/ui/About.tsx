@@ -6,7 +6,7 @@ import { Statistics } from 'components/Main/Statistics';
 import { GitHubStatistics } from 'components/Main/GitHubStatistics';
 import { CommandBlock } from 'components/Main/CommandBlock';
 import cls from './About.module.css';
-import { aboutSubtitle, aboutTitle } from './models/aboutData';
+import { aboutTitle } from './models/aboutData';
 
 interface IAboutData {
   className?: string;

@@ -1,6 +1,5 @@
 import SpliteText from 'utils/spliteText/spliteText';
 import { classNames } from 'utils/classNames/classNames';
-import YandexLogo from 'assets/images/icons/yandex.svg';
 import { CommandBlock } from 'components/Main/CommandBlock';
 import cls from './Projects.module.css';
 
@@ -17,7 +16,7 @@ export const Projects = () => {
           </p>
           <p className={classNames(cls.text, {}, [])}>
             <span className={classNames(cls.span, {}, [])}>
-              education $
+              prstvanya/education $
             </span>
             {' '}
             ls

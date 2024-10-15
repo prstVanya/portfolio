@@ -12,8 +12,8 @@ export const CommandBlock = ({ className, children }: ICommandBlockData) => {
     <div className={classNames(cls.info)}>
       <div className={classNames(cls.points, {}, [className])}>
         <div className={classNames(cls.point, {}, [])}></div>
-        <div className={classNames(cls.point, {}, [])}></div>
-        <div className={classNames(cls.point, {}, [])}></div>
+        <div className={classNames(cls.point, {}, [cls.pointyellow])}></div>
+        <div className={classNames(cls.point, {}, [cls.pointgreen])}></div>
       </div>
       <div className={classNames(cls.block, {}, [])}>
         {children}
