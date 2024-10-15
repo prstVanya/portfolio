@@ -1,5 +1,6 @@
 import ChangeThemeButton from 'utils/ChangeThemeButton/ChangeThemeButton';
 import { classNames } from 'utils/classNames/classNames';
+import CloseSvg from 'assets/images/icons/close_icon.svg';
 import cls from './Navigator.module.css';
 
 interface INavigatorData {
@@ -22,7 +23,9 @@ const Navigator = ({
         <a href='#' className={classNames(cls.href, {}, [])}>Info</a>
       </nav>
       <ChangeThemeButton isTrue={isTrue} toogleButton={toogleButton} />
-      <button onClick={onClose} className={classNames(cls.close, {}, [])}></button>
+      <button onClick={onClose} className={classNames(cls.close, {}, [])}>
+        <CloseSvg />
+      </button>
     </div>
   );
 };

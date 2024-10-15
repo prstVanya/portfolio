@@ -1,6 +1,7 @@
 import { classNames } from 'utils/classNames/classNames';
 import Logo from 'assets/images/icons/logo.svg';
 import ChangeThemeButton from 'utils/ChangeThemeButton/ChangeThemeButton';
+import BurgerSvg from 'assets/images/icons/burger.svg';
 import cls from './Header.module.css';
 
 interface HeaderProps {
@@ -26,7 +27,9 @@ export const Header = ({
           <a className={classNames(cls.to, {}, [])}>Info</a>
         </nav>
         <ChangeThemeButton isTrue={isTrue} toogleButton={toogleButton} />
-        <button onClick={openNav} className={classNames(cls.navButton, {}, [])}></button>
+        <button onClick={openNav} className={classNames(cls.navButton, {}, [])}>
+          <BurgerSvg />
+        </button>
       </div>
     </header>
   );
