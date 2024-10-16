@@ -19,6 +19,11 @@
   position: relative;
 }
 
+.dark {
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+}
+
 .test {
   font-family: var(--fonts-jetbrains-regular);
   font-size: 34px;

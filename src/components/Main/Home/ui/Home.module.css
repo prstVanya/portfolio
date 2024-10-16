@@ -1,8 +1,6 @@
 .section {
   width: 100%;
   margin: 100px auto 0;
-  background-color: var(--background-color-dark);
-  color: var(--text-color-light);
 }
 
 .mainContainer {
@@ -13,8 +11,6 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: min-content auto;
   grid-gap: 1rem;
-  background-color: var(--background-color-dark);
-  color: var(--text-color-light);
 }
 
 .texts {

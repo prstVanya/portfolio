@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <div className={classNames('app', {}, [])}>
-      <div className={classNames('wrapper', {}, [])}>
+      <div className={classNames('wrapper', { dark: isDark }, [])}>
         <Navigator
           onClose={handleCloseNav}
           isOpen={openNav}
