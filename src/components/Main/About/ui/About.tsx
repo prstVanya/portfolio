@@ -10,9 +10,10 @@ import { aboutTitle } from './models/aboutData';
 
 interface IAboutData {
   className?: string;
+  isDark: boolean;
 }
 
-export const About = ({ className }: IAboutData) => {
+export const About = ({ className, isDark }: IAboutData) => {
   return (
     <section className={classNames(cls.about, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
@@ -43,7 +44,7 @@ export const About = ({ className }: IAboutData) => {
         </CommandBlock>
         <div className={classNames(cls.sprite, {}, [])}>
           <Canvas className={classNames(cls.canvas, {}, [])} camera={{ position: [5, -15, -1] }}>
-            <SkillsAnimation />
+            <SkillsAnimation isDark={isDark} />
           </Canvas>
         </div>
         <Statistics />

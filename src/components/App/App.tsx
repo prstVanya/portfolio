@@ -41,7 +41,7 @@ const App = () => {
           toogleButton={handleToogleButton}
         />
         <Header openNav={handleOpenNav} isTrue={isDark} toogleButton={handleToogleButton} />
-        <Main />
+        <Main isDark={isDark} />
         <Footer />
       </div>
     </div>

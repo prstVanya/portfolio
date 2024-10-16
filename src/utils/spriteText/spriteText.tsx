@@ -16,7 +16,11 @@ declare global {
   }
 }
 
-function SkillsAnimation() {
+interface SkillsData {
+  isDark: boolean;
+}
+
+function SkillsAnimation({ isDark }: SkillsData) {
   const ref = useRef<Group | null>();
   const mySkills: Skill[] = [
     'JavaScript',
@@ -30,6 +34,20 @@ function SkillsAnimation() {
     'TypeScript',
     'SCSS',
   ];
+
+  const handleChangeColors = (i: number) => {
+    if (!isDark) {
+      if (i % 2 === 0) {
+        return '#FAFF81';
+      }
+      return '#E06D06';
+    }
+    if (i % 2 === 0) {
+      return '#00008B';
+    }
+    return '#4169E1';
+  };
+
   const getPosition = (position: number) => {
     const first = Math.random();
     const second = Math.random();
@@ -56,7 +74,7 @@ function SkillsAnimation() {
             fontSize={90}
             position={[getPosition(80), getPosition(80), getPosition(80)]}
             fontFace={"'Fira Code','Roboto Mono', monospace"}
-            color={i % 2 === 0 ? '#FAFF81' : '#E06D06'}
+            color={handleChangeColors(i)}
           />
         );
       })}

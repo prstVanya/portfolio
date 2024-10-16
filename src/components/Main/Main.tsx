@@ -8,13 +8,14 @@ import { Projects } from './Projects';
 
 interface IMainData {
   className?: string;
+  isDark: boolean;
 }
 
-const Main = ({ className }: IMainData) => {
+const Main = ({ className, isDark }: IMainData) => {
   return (
     <main className={classNames(cls.content, {}, [className])}>
       <Home />
-      <About />
+      <About isDark={isDark} />
       <Study data={projectsData} />
       <Projects />
     </main>
