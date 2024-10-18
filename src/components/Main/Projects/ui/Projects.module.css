@@ -22,7 +22,7 @@
   cursor: default;
 }
 
-.text:hover {
+.hover:hover {
   transform: translateY(-5px);
 }
 

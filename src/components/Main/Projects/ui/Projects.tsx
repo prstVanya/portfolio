@@ -22,7 +22,7 @@ export const Projects = () => {
             ls
           </p>
           <ul className={classNames(cls.ul, {}, [])}>
-            <li className={classNames(cls.text, {}, [])}>
+            <li className={classNames(cls.text, {}, [cls.hover])}>
               📖 cfu: main crimean university, specialization special math, 2021-2025
               {' '}
               <a
@@ -31,7 +31,7 @@ export const Projects = () => {
                 target='_blank' rel="noreferrer"
               >link</a>
             </li>
-            <li className={classNames(cls.text, {}, [])}>
+            <li className={classNames(cls.text, {}, [cls.hover])}>
               💻 yandex practicum: online course web-developer, 2023-2024
               {' '}
               <a
