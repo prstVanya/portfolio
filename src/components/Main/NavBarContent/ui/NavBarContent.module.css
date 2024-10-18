@@ -23,7 +23,7 @@
 }
 
 .active {
-  color: var(--text-hover-light);
+  color: var(--text-hover-dark);
   font-family: var(--fonts-jetbrains-bold);
 }
 
@@ -40,7 +40,7 @@
 }
 
 .lineAvtive {
-  background-color: var(--text-hover-light);
+  background-color: var(--text-hover-dark);
   bottom: 0;
   height: 2px;
   left: 0;
