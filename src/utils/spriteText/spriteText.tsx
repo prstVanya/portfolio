@@ -58,7 +58,6 @@ function SkillsAnimation({ isDark }: SkillsData) {
   useFrame(() => {
     ref.current.rotation.x += 0.00132;
     ref.current.rotation.y += 0.00132;
-    ref.current.rotation.z += 0.00132;
   });
 
   return (

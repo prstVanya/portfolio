@@ -1,6 +1,6 @@
 import { classNames } from 'utils/classNames/classNames';
 import Sun from 'assets/images/icons/sun.svg';
-import Moon from 'assets/images/icons/moon-svgrepo-com.svg';
+import Moon from 'assets/images/icons/moon__one.svg';
 import cls from './changeSun.module.css';
 
 interface IChangeSunData {
