@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  margin: 0px auto 0;
+  margin: 0 auto;
 }
 
 .mainContainer {
@@ -26,11 +26,11 @@
 
 .span {
   margin: 0;
-  color: rgb(0, 255, 164);
+  color: rgb(0 255 164);
 }
 
 .main {
-  color: rgb(39, 201, 63);
+  color: rgb(39 201 63);
 }
 
 .link {
@@ -44,7 +44,7 @@
 .subtitle {
   font-family: var(--fonts-jetbrains-regular);
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
   font-size: 1.333rem;
   width: 100%;
 }
@@ -55,7 +55,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 889px) {
+@media screen and (width <= 889px) {
   .mainContainer {
     display: flex;
     flex-direction: column;

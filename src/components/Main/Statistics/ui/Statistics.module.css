@@ -1,7 +1,7 @@
 .moreInfo {
   grid-column: 1 / 13;
   grid-row: 4 / 5;
-  border-top: 1px solid rgb(41, 41, 71);
+  border-top: 1px solid rgb(41 41 71);
   width: 100%;
   margin: 0;
   padding-top: 40px;
@@ -20,12 +20,12 @@
   text-align: start;
   margin: 0;
   padding: 0;
-  color: rgb(248, 248, 248);
+  color: rgb(248 248 248);
 }
 
 .span {
   margin: 0;
-  color: rgb(0, 255, 164);
+  color: rgb(0 255 164);
 }
 
 .stats {
@@ -34,7 +34,6 @@
   list-style: none;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   gap: 20px;
   flex-direction: column;
@@ -56,7 +55,6 @@
 
 .current {
   font-size: 1.328rem;
-  margin: 0;
   font-family: var(--fonts-jetbrains-regular);
   margin: 0;
 }
