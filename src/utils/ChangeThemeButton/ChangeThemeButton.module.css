@@ -1,5 +1,4 @@
 .button {
-  margin-left: auto;
   width: 36px;
   height: 36px;
   display: flex;
@@ -22,7 +21,7 @@
   border: 2px solid black;
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (width <= 602px) {
   .button {
     display: none;
   }
