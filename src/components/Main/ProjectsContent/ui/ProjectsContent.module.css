@@ -76,6 +76,14 @@
   color: var(--text-hover-light);
 }
 
+.link.linkDark {
+  color: var(--text-color-dark);
+}
+
+.link.linkDark:hover {
+  color: var(--text-hover-light);
+}
+
 .nothing {
   width: 100%;
   font-size: 36px;

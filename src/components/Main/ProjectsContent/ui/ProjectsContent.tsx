@@ -6,9 +6,12 @@ interface IProjectsContent {
   className?: string;
   data: TProjectsSection[];
   filter: string;
+  isDark: boolean;
 }
 
-export const ProjectsContent = ({ className, data, filter }: IProjectsContent) => {
+export const ProjectsContent = ({
+  className, data, filter, isDark,
+}: IProjectsContent) => {
   const filteredData = data.filter((project) => project.type === filter);
 
   return (
@@ -22,7 +25,7 @@ export const ProjectsContent = ({ className, data, filter }: IProjectsContent) =
             <div className={classNames(cls.info, {}, [])}>
               <h3 className={classNames(cls.heading, {}, [])}>{c.title}</h3>
               <p className={classNames(cls.text, {}, [])}>{c.text}</p>
-              <a target='_blank' href={c.gitHubLink} className={classNames(cls.link, {}, [])} rel="noreferrer">GitHub</a>
+              <a target='_blank' href={c.gitHubLink} className={classNames(cls.link, { [cls.linkDark]: isDark }, [])} rel="noreferrer">GitHub</a>
             </div>
           </li>
         ))

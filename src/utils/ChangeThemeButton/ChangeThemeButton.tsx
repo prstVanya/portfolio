@@ -10,7 +10,10 @@ interface IChangeThemeButtonData {
 
 const ChangeThemeButton = ({ className, toogleButton, isTrue }: IChangeThemeButtonData) => {
   return (
-    <button onClick={toogleButton} className={classNames(cls.button, {}, [className])}>
+    <button
+      onClick={toogleButton}
+      className={classNames(cls.button, { [cls.dark]: isTrue }, [className])}
+    >
       <ChangeSun isTrue={isTrue} />
     </button>
   );

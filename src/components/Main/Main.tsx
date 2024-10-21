@@ -16,7 +16,7 @@ const Main = ({ className, isDark }: IMainData) => {
     <main className={classNames(cls.content, {}, [className])}>
       <Home />
       <About isDark={isDark} />
-      <Study data={projectsData} />
+      <Study isDark={isDark} data={projectsData} />
       <Projects />
     </main>
   );

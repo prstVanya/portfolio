@@ -7,9 +7,12 @@ interface INavBarContent {
   className?: string;
   titles: string[];
   setFilter: any;
+  isDark: boolean;
 }
 
-export const NavBarContent = ({ className, titles, setFilter }: INavBarContent) => {
+export const NavBarContent = ({
+  className, titles, setFilter, isDark,
+}: INavBarContent) => {
   const [activeText, setActiveText] = useState(0);
   const [activeElement, setActiveElement] = useState(0);
   const [widthElement] = useState(100 / (titles.length));
@@ -38,6 +41,7 @@ export const NavBarContent = ({ className, titles, setFilter }: INavBarContent) 
           <li key={i}
             className={classNames(cls.item, {
               [cls.active]: i === activeText,
+              [cls.darkText]: isDark,
             }, [])}
             onClick={(e) => clickLinkHandler(e, i)}
             style={{ width: `${widthElement}%` }}
@@ -47,7 +51,10 @@ export const NavBarContent = ({ className, titles, setFilter }: INavBarContent) 
         ))}
       </ul>
       <div className={classNames(cls.line, {}, [])}>
-        <div className={classNames(cls.lineAvtive, {}, [])} ref={lineRef}></div>
+        <div
+          className={classNames(cls.lineAvtive, { [cls.darkLine]: isDark }, [])}
+          ref={lineRef}
+        ></div>
       </div>
     </div>
   );

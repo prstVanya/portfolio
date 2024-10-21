@@ -18,6 +18,10 @@
   border-radius: 8px;
 }
 
+.button.dark:hover {
+  border: 2px solid black;
+}
+
 @media screen and (max-width: 602px) {
   .button {
     display: none;

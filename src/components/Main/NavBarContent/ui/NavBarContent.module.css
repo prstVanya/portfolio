@@ -23,8 +23,12 @@
 }
 
 .active {
-  color: var(--text-hover-dark);
+  color: var(--text-hover-light);
   font-family: var(--fonts-jetbrains-bold);
+}
+
+.active.darkText {
+  color: var(--text-hover-dark);
 }
 
 .link {
@@ -40,11 +44,15 @@
 }
 
 .lineAvtive {
-  background-color: var(--text-hover-dark);
+  background-color: var(--text-hover-light);
   bottom: 0;
   height: 2px;
   left: 0;
   position: absolute;
   top: 0;
   transition: left .3s ease;
+}
+
+.lineAvtive.darkLine {
+  background-color: var(--text-hover-dark);
 }

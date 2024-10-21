@@ -9,17 +9,22 @@ import cls from './Study.module.css';
 interface IStudyData {
   className?: string;
   data: TProjectsSection[];
+  isDark: boolean;
 
 }
-export const Study = ({ className, data }: IStudyData) => {
+export const Study = ({ className, data, isDark }: IStudyData) => {
   const [filter, setFilter] = useState('Mesto');
 
   return (
     <section className={classNames(cls.section, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
         <SpliteText>Projects</SpliteText>
-        <NavBarContent titles={['Mesto', 'KARDO', 'Movie', 'Portfolio', 'Blog']} setFilter={setFilter} />
-        <ProjectsContent data={data} filter={filter} />
+        <NavBarContent
+          isDark={isDark}
+          titles={['Mesto', 'KARDO', 'Movie', 'Portfolio', 'Blog']}
+          setFilter={setFilter}
+        />
+        <ProjectsContent isDark={isDark} data={data} filter={filter} />
       </div>
     </section>
   );
