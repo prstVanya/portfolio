@@ -3,8 +3,9 @@ import '../../pages/index.css';
 import { Header } from 'components/Header';
 import Main from 'components/Main/Main';
 import { Footer } from 'components/Footer';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import Navigator from 'components/Navigator/ui/Navigator';
+import { PageLoader } from 'components/PageLoader/PageLoader';
 
 const App = () => {
   const [isDark, setIsDark] = useState<boolean>(false);
@@ -32,19 +33,21 @@ const App = () => {
   };
 
   return (
-    <div className={classNames('app', {}, [])}>
-      <div className={classNames('wrapper', { dark: isDark }, [])}>
-        <Navigator
-          onClose={handleCloseNav}
-          isOpen={openNav}
-          isTrue={isDark}
-          toogleButton={handleToogleButton}
-        />
-        <Header openNav={handleOpenNav} isTrue={isDark} toogleButton={handleToogleButton} />
-        <Main isDark={isDark} />
-        <Footer />
+    <Suspense fallback={<PageLoader />}>
+      <div className={classNames('app', {}, [])}>
+        <div className={classNames('wrapper', { dark: isDark }, [])}>
+          <Navigator
+            onClose={handleCloseNav}
+            isOpen={openNav}
+            isTrue={isDark}
+            toogleButton={handleToogleButton}
+          />
+          <Header openNav={handleOpenNav} isTrue={isDark} toogleButton={handleToogleButton} />
+          <Main isDark={isDark} />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 };
 
