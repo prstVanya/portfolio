@@ -16,7 +16,7 @@ export const Home = ({ className }: IHomeData) => {
   useEffect(() => {
     const interval = setTimeout(() => {
       setIsCanvasVisible(true);
-    }, 3500);
+    }, 2000);
 
     return () => {
       clearInterval(interval);

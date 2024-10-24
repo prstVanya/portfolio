@@ -27,9 +27,9 @@
   content: '';
   position: fixed;
   inset: 0;
-  background: rgb(0 0 0 / 50%); /* Черный цвет с прозрачностью */
-  backdrop-filter: blur(10px); /* Эффект размытия фона */
-  z-index: -1; /* Помещаем его под навигацией */
+  background: rgb(0 0 0 / 50%);
+  backdrop-filter: blur(10px); 
+  z-index: -1; 
 }
 
 .container {
@@ -61,6 +61,11 @@
   height: 20px;
   top: 32px;
   right: 20px;
+  cursor: pointer;
   background-color: transparent;
   border: none;
+}
+
+.close:hover {
+  opacity: .3;
 }
