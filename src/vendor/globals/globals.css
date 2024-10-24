@@ -4,10 +4,10 @@
   --fonts-jetbrains-medium: 'JetBrains-Medium', 'Arial', sans-serif;
   --fonts-jetbrains-regular: 'JetBrains-Regular', 'Arial', sans-serif;
   --fonts-jetbrains-bold: 'JetBrains-Bold', 'Arial', sans-serif;
-  --background-color-light: rgb(241 178 206);
-  --background-color-dark: rgb(0 0 40);
-  --text-color-light: rgb(241 178 206);
-  --text-color-dark: rgb(0 0 98);
+  --background-color-light: #D3D3D3;
+  --background-color-dark: rgb(32 32 32);;
+  --text-color-light: #fff;
+  --text-color-dark: black;
   --text-hover-light: rgb(0 247 255);
   --text-hover-dark: rgb(0 115 119);
 }
