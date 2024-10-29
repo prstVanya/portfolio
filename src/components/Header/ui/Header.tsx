@@ -26,7 +26,7 @@ export const Header = ({
           <a className={classNames(cls.to, {}, [])}>Education</a>
           <a className={classNames(cls.to, {}, [])}>Info</a>
         </nav>
-        <ChangeThemeButton isTrue={isTrue} toogleButton={toogleButton} />
+        <ChangeThemeButton isNavBar={true} isTrue={isTrue} toogleButton={toogleButton} />
         <button onClick={openNav} className={classNames(cls.navButton, {}, [])}>
           <BurgerSvg />
         </button>

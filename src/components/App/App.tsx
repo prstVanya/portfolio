@@ -38,6 +38,7 @@ const App = () => {
         <div className={classNames('wrapper', { dark: isDark }, [])}>
           <Navigator
             onClose={handleCloseNav}
+            isDark={isDark}
             isOpen={openNav}
             isTrue={isDark}
             toogleButton={handleToogleButton}

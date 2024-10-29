@@ -4,8 +4,9 @@
   display: flex;
   align-items: center;
   top: 0;
-  left: 0;
-  position: sticky;
+  left: 5.195%;
+  position: fixed;
+  z-index: 1000;
 }
 
 .mainContainer {
