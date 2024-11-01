@@ -19,5 +19,5 @@ export const textData: ITextData[] = [
   {
     id: 4,
     text: 'NaNaNa',
-  }
+  },
 ];

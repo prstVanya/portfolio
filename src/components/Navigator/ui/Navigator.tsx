@@ -55,11 +55,11 @@ const Navigator = ({
           [],
         )}>Info</a>
       </nav>
-      <ChangeThemeButton 
-        className={classNames(cls.but, {}, [])} 
-        isNavBar={false} 
-        isTrue={isTrue} 
-        toogleButton={toogleButton} 
+      <ChangeThemeButton
+        className={classNames(cls.but, {}, [])}
+        isNavBar={false}
+        isTrue={isTrue}
+        toogleButton={toogleButton}
       />
       <button onClick={onClose} className={classNames(cls.close, {}, [])}>
         <CloseSvg />
