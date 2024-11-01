@@ -55,6 +55,7 @@ const App = () => {
       <div className={classNames('app', {}, [])}>
         <div className={classNames('wrapper', { dark: isDark }, [])}>
           <Navigator
+            scrollInto={handleScrollPage}
             onClose={handleCloseNav}
             isDark={isDark}
             isOpen={openNav}

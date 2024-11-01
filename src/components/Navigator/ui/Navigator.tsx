@@ -2,6 +2,7 @@ import ChangeThemeButton from 'utils/ChangeThemeButton/ChangeThemeButton';
 import { classNames } from 'utils/classNames/classNames';
 import CloseSvg from 'assets/images/icons/close_icon.svg';
 import cls from './Navigator.module.css';
+import { navigatorProps } from '../models/navigatorData';
 
 interface INavigatorData {
   className?: string;
@@ -10,10 +11,11 @@ interface INavigatorData {
   isOpen: boolean;
   onClose: () => void;
   isDark: boolean;
+  scrollInto: (id: string) => void;
 }
 
 const Navigator = ({
-  className, isTrue, toogleButton, isOpen, onClose, isDark,
+  className, isTrue, toogleButton, isOpen, onClose, isDark, scrollInto,
 }: INavigatorData) => {
   return (
     <div className={classNames(
@@ -26,34 +28,28 @@ const Navigator = ({
     )}
     >
       <nav className={classNames(cls.container, {}, [])}>
-        <a href='#' className={classNames(
-          cls.href,
-          {
-            [cls.darkHref]: isDark,
-          },
-          [],
-        )}>About</a>
-        <a href='#' className={classNames(
-          cls.href,
-          {
-            [cls.darkHref]: isDark,
-          },
-          [],
-        )}>Projects</a>
-        <a href='#' className={classNames(
-          cls.href,
-          {
-            [cls.darkHref]: isDark,
-          },
-          [],
-        )}>Education</a>
-        <a href='#' className={classNames(
-          cls.href,
-          {
-            [cls.darkHref]: isDark,
-          },
-          [],
-        )}>Info</a>
+        {navigatorProps.map((w) => {
+          return (
+            <a 
+              href={w.to} 
+              key={w.id}
+              onClick={(e: any) => {
+                e.preventDefault();
+
+                scrollInto(w.to);
+                onClose();
+              }}
+              className={classNames(
+                cls.href,
+                {
+                  [cls.darkHref]: isDark,
+                },
+                [],
+              )}>
+                {w.name}
+              </a>
+          )
+        })}
       </nav>
       <ChangeThemeButton
         className={classNames(cls.but, {}, [])}

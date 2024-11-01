@@ -68,3 +68,24 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 524px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .resume {
+    margin-top: 20px;
+  }
+}
