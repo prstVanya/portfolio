@@ -3,10 +3,9 @@ import { useFrame, extend } from '@react-three/fiber';
 import SpriteText from 'three-spritetext';
 import { useRef } from 'react';
 import { Group } from 'three';
+import { Skill } from 'types';
 
 extend({ SpriteText });
-
-type Skill = string;
 
 declare global {
   namespace JSX {

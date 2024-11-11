@@ -3,7 +3,6 @@ import { Canvas } from '@react-three/fiber';
 import SkillsAnimation from 'utils/spriteText/spriteText';
 import SpliteText from 'utils/spliteText/spliteText';
 import { Statistics } from 'components/Main/Statistics';
-import { GitHubStatistics } from 'components/Main/GitHubStatistics';
 import { CommandBlock } from 'components/Main/CommandBlock';
 import { RefObject } from 'react';
 import cls from './About.module.css';
@@ -50,7 +49,6 @@ export const About = ({ className, isDark, refer }: IAboutData) => {
           </Canvas>
         </div>
         <Statistics />
-        <GitHubStatistics />
       </div>
     </section>
   );

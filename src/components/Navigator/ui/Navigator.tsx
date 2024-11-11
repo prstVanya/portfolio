@@ -30,8 +30,8 @@ const Navigator = ({
       <nav className={classNames(cls.container, {}, [])}>
         {navigatorProps.map((w) => {
           return (
-            <a 
-              href={w.to} 
+            <a
+              href={w.to}
               key={w.id}
               onClick={(e: any) => {
                 e.preventDefault();
@@ -48,7 +48,7 @@ const Navigator = ({
               )}>
                 {w.name}
               </a>
-          )
+          );
         })}
       </nav>
       <ChangeThemeButton

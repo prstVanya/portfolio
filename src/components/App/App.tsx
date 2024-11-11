@@ -12,6 +12,8 @@ import { PageLoader } from 'components/PageLoader/PageLoader';
 const App = () => {
   const [isDark, setIsDark] = useState<boolean>(false);
   const [openNav, setOpenNav] = useState<boolean>(false);
+  const [activeSection, setActiveSection] = useState<string>('');
+
   const scrollToAboutPage = useRef<HTMLElement>(null);
   const scrollToHomePage = useRef<HTMLElement>(null);
   const scrollToStudyPage = useRef<HTMLElement>(null);
@@ -19,8 +21,8 @@ const App = () => {
 
   const handleScrollPage = (id: string) => {
     const refMap: { [key: string]: RefObject<HTMLElement> } = {
-      '#about': scrollToAboutPage,
       '#home': scrollToHomePage,
+      '#about': scrollToAboutPage,
       '#education': scrollToStudyPage,
       '#projects': scrollToProjectsPage,
     };
@@ -67,6 +69,7 @@ const App = () => {
             isDark={isDark}
             openNav={handleOpenNav}
             isTrue={isDark}
+            activeSection={activeSection}
             toogleButton={handleToogleButton}
           />
           <Main

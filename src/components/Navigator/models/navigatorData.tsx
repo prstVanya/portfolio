@@ -2,7 +2,7 @@ interface INavigatorData {
   id: number;
   name: string;
   to: string;
-};
+}
 
 export const navigatorProps: INavigatorData[] = [
   {
@@ -20,4 +20,4 @@ export const navigatorProps: INavigatorData[] = [
     name: 'Education',
     to: '#education',
   },
-]
+];
