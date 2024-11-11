@@ -5,3 +5,5 @@ export type TProjectsSection = {
   gitHubLink?: string;
   type: 'Mesto' | 'KARDO' | 'Movie' | 'Portfolio' | 'Blog';
 };
+
+export type Skill = string;

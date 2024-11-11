@@ -1,11 +1,17 @@
 import SpliteText from 'utils/spliteText/spliteText';
 import { classNames } from 'utils/classNames/classNames';
 import { CommandBlock } from 'components/Main/CommandBlock';
+import { RefObject } from 'react';
 import cls from './Projects.module.css';
 
-export const Projects = () => {
+interface IProjectsData {
+  className?: string;
+  refer: RefObject<HTMLElement>;
+}
+
+export const Projects = ({ className, refer }: IProjectsData) => {
   return (
-    <section className={classNames(cls.education, {}, [])}>
+    <section id='#education' ref={refer} className={classNames(cls.education, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
         <SpliteText>Education</SpliteText>
         <CommandBlock>

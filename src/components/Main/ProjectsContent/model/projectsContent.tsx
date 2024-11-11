@@ -2,6 +2,7 @@ import { TProjectsSection } from 'types';
 import mestoProject from 'assets/images/projects/MESTO.png';
 import kardoProject from 'assets/images/projects/Kardo.png';
 import movieProject from 'assets/images/projects/MOVIE.png';
+import portfolioProject from 'assets/images/projects/Portfolio.png';
 
 export const projectsData: TProjectsSection[] = [
   {
@@ -10,7 +11,7 @@ export const projectsData: TProjectsSection[] = [
     text: `Проект MESTO, некий клон инстаграмма, где пользователь может выкладывать фото.
            Из функционала здесь присутствует: регистрация и авторизация пользователя, редактирование
            профиля, поставить или удалить лайк, создать или удалить карточку`,
-    gitHubLink: 'https://github.com/VanyaGachist2/react-mesto-api-full-gha',
+    gitHubLink: 'https://github.com/prstVanya/react-mesto-api-full-gha',
     type: 'Mesto',
   },
   {
@@ -26,15 +27,15 @@ export const projectsData: TProjectsSection[] = [
     title: 'Проект MOVIE',
     text: `Проект MOVIE, сайт с поиском фильма по запросу. Из функционала: поиск фильма по словам,
            поиск используя фильтр, регистрация и авторизация, обновление информации о пользователе.`,
-    gitHubLink: 'https://github.com/VanyaGachist2/movies-explorer-frontend',
+    gitHubLink: 'https://github.com/prstVanya/movies-explorer-frontend',
     type: 'Movie',
   },
   {
-    image: mestoProject,
+    image: portfolioProject,
     title: 'Проект портфолио',
     text: `Проект портфолио, где представленна информация обо мне: стек технологий, где учился,
            резюме.`,
-    gitHubLink: 'https://github.com/VanyaGachist2/portfolio',
+    gitHubLink: 'https://github.com/prstVanya/portfolio',
     type: 'Portfolio',
   },
 ];

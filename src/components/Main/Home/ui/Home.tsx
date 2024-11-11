@@ -2,21 +2,22 @@ import { classNames } from 'utils/classNames/classNames';
 import Typist from 'react-typist-component';
 import { Canvas } from '@react-three/fiber';
 import ThreeModel from 'utils/threeModel/threeModel';
-import { useEffect, useState } from 'react';
+import { RefObject, useEffect, useState } from 'react';
 import cls from './Home.module.css';
 import { textData } from '../models/textsForHome';
 
 interface IHomeData {
   className?: string;
+  refer: RefObject<HTMLElement>
 }
 
-export const Home = ({ className }: IHomeData) => {
+export const Home = ({ className, refer }: IHomeData) => {
   const [isCanvasVisible, setIsCanvasVisible] = useState(false);
 
   useEffect(() => {
     const interval = setTimeout(() => {
       setIsCanvasVisible(true);
-    }, 2000);
+    }, 2900);
 
     return () => {
       clearInterval(interval);
@@ -24,7 +25,7 @@ export const Home = ({ className }: IHomeData) => {
   }, [isCanvasVisible]);
 
   return (
-    <section className={classNames(cls.section, {}, [className])}>
+    <section id='#home' ref={refer} className={classNames(cls.section, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
         <Typist>
           <div className={classNames(cls.texts, {}, [])}>

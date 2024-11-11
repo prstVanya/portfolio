@@ -3,19 +3,20 @@ import { Canvas } from '@react-three/fiber';
 import SkillsAnimation from 'utils/spriteText/spriteText';
 import SpliteText from 'utils/spliteText/spliteText';
 import { Statistics } from 'components/Main/Statistics';
-import { GitHubStatistics } from 'components/Main/GitHubStatistics';
 import { CommandBlock } from 'components/Main/CommandBlock';
+import { RefObject } from 'react';
 import cls from './About.module.css';
 import { aboutTitle } from './models/aboutData';
 
 interface IAboutData {
   className?: string;
   isDark: boolean;
+  refer: RefObject<HTMLElement>;
 }
 
-export const About = ({ className, isDark }: IAboutData) => {
+export const About = ({ className, isDark, refer }: IAboutData) => {
   return (
-    <section className={classNames(cls.about, {}, [className])}>
+    <section id='#about' ref={refer} className={classNames(cls.about, {}, [className])}>
       <div className={classNames(cls.mainContainer, {}, [])}>
         <SpliteText>{aboutTitle}</SpliteText>
         <CommandBlock>
@@ -48,7 +49,6 @@ export const About = ({ className, isDark }: IAboutData) => {
           </Canvas>
         </div>
         <Statistics />
-        <GitHubStatistics />
       </div>
     </section>
   );

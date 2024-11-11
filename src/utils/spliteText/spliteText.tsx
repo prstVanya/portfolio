@@ -8,7 +8,7 @@ import cls from './spliteText.module.css';
 const ALPHABETS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 interface ISpliteTextData {
-  children: ReactNode; // Определяем тип для children
+  children: ReactNode;
 }
 
 const SpliteText = ({ children }: ISpliteTextData) => {

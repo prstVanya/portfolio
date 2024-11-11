@@ -14,6 +14,10 @@ export const textData: ITextData[] = [
   },
   {
     id: 3,
-    text: 'gamer.',
+    text: 'React JS.',
+  },
+  {
+    id: 4,
+    text: 'NaNaNa',
   },
 ];
