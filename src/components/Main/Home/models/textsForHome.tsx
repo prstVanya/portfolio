@@ -12,12 +12,4 @@ export const textData: ITextData[] = [
     id: 2,
     text: 'front-end;',
   },
-  {
-    id: 3,
-    text: 'React JS.',
-  },
-  {
-    id: 4,
-    text: 'NaNaNa',
-  },
 ];

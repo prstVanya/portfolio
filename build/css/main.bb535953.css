@@ -68,7 +68,6 @@
   color: var(--text-color-light);
   position: relative;
   transition: background-color .3s ease, color .3s ease;
-  transition: background-color .3s ease, color .3s ease;
 }
 
 .dark {
@@ -91,7 +90,6 @@
   background-color: transparent;
   opacity: 1;
   transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
 }
 
 .dXLSRIgj {
@@ -107,7 +105,6 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  transition: border .1s cubic-bezier(.4, 0, .2,1);
   transition: border .1s cubic-bezier(.4, 0, .2,1);
 }
 
@@ -168,7 +165,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
 }
 
@@ -195,10 +191,8 @@
   margin: 0;
   text-transform: uppercase;
   text-decoration: none;
-  text-decoration: none;
   padding: 0;
   color: var(--text-color-light);
-  transition: color .2s ease;
   transition: color .2s ease;
   cursor: pointer;
 }
@@ -219,9 +213,7 @@
 }
 
 .e2AHeZ64 {
-  object-fit: cover;
      object-fit: cover;
-  object-position: center;
      object-position: center;
   cursor: pointer;
 }
@@ -262,7 +254,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   gap: 200px;
 }
@@ -279,7 +270,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: min-content auto;
-  grid-template-rows: min-content auto;
   grid-gap: 1rem;
 }
 
@@ -289,7 +279,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   gap: 8px;
   grid-column: 1 / 8;
@@ -309,7 +298,6 @@
   height: 550px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 2s ease, visibility 2s ease;
   transition: opacity 2s ease, visibility 2s ease;
 }
 
@@ -422,7 +410,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -478,7 +465,6 @@
   gap: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
 }
 
@@ -514,12 +500,10 @@
   max-width: 79px;
   width: 100%;
   text-decoration: none;
-  text-decoration: none;
   color: var(--text-color-light);
 }
 
 .lNf3i4hK:hover {
-  text-decoration: underline;
   text-decoration: underline;
 }
 
@@ -536,7 +520,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   font-family: var(--fonts-jetbrains-regular);
 }
@@ -551,7 +534,6 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: min-content auto;
   grid-template-rows: min-content auto;
   position: relative;
   grid-gap: 0 1rem;
@@ -580,7 +562,6 @@
 
 .RwjZPhCs {
   text-decoration: none;
-  text-decoration: none;
 }
 
 .RwjZPhCs:hover {
@@ -608,7 +589,6 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        flex-direction: column;
             flex-direction: column;
     text-align: center;
     -webkit-box-align: center;
@@ -661,7 +641,6 @@
 ._7Oot8wh {
   color: inherit;
   text-decoration: none;
-  text-decoration: none;
 }
 
 ._kIeH20G {
@@ -678,7 +657,6 @@
   left: 0;
   position: absolute;
   top: 0;
-  transition: left .3s ease;
   transition: left .3s ease;
 }
 
@@ -734,9 +712,7 @@
   height: 100%;
   inset: 0;
   position: absolute;
-  object-fit: cover;
      object-fit: cover;
-  object-position: center;
      object-position: center;
   width: 100%;
 }
@@ -747,7 +723,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   gap: 1.4rem;
   width: 50%;
@@ -775,7 +750,6 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  text-decoration: none;
   text-decoration: none;
   color: var(--text-color-light);
 }
@@ -807,7 +781,6 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -835,7 +808,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   gap: 2.2vw;
   margin: 0 auto;
@@ -864,7 +836,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   gap: 20px;
 }
@@ -877,15 +848,12 @@
   padding: 0;
   color: rgb(248 248 248);
   transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
   cursor: default;
 }
 
 .vaSmgFxN:hover {
-  transform: translateY(-5px);
-      transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
@@ -906,7 +874,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   gap: 10px;
 }
@@ -934,7 +901,6 @@
   gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   text-align: left;
 }
@@ -953,14 +919,11 @@
   height: 36px;
   cursor: pointer;
   transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 .bJeXV4Vo:hover {
-  transform: translateY(-3px);
-      transform: translateY(-3px);
           transform: translateY(-3px);
 }
 
@@ -983,7 +946,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -994,11 +956,9 @@
   gap: .9%;
   border-radius: 0.5rem;
   color: #120003;
-  box-shadow: 8px 8px 0 #120003;
           box-shadow: 8px 8px 0 #120003;
   cursor: pointer;
   opacity: 1;
-  transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
@@ -1020,14 +980,12 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        flex-direction: column;
             flex-direction: column;
   }
 
   .T8s7JvpH {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        flex-direction: column-reverse;
             flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1060,7 +1018,6 @@
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1071,7 +1028,6 @@
   gap: 20px;
   z-index: 1001;
   overflow: hidden;
-  transition: opacity .4s ease-in-out, visibility .4s ease-in-out, background-color .3s ease;
   transition: opacity .4s ease-in-out, visibility .4s ease-in-out, background-color .3s ease;
 }
 
@@ -1092,7 +1048,6 @@
   position: fixed;
   inset: 0;
   background: rgb(0 0 0 / 50%);
-  backdrop-filter: blur(10px);
           backdrop-filter: blur(10px); 
   z-index: -1; 
 }
@@ -1103,7 +1058,6 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1124,7 +1078,6 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  text-decoration: none;
   text-decoration: none;
   color: var(--text-color-light);
   font-family: var(--fonts-jetbrains-regular);
@@ -1172,7 +1125,6 @@
 
 .lds-dual-ring,
 .lds-dual-ring::after {
-  box-sizing: border-box;
           box-sizing: border-box;
 }
 
@@ -1191,30 +1143,25 @@
   border-radius: 50%;
   border: 6.4px solid currentcolor;
   border-color: currentcolor transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
           animation: lds-dual-ring 1.2s linear infinite;
 }
 
 @keyframes lds-dual-ring {
   0% {
-    transform: rotate(0deg);
             transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
 
 @keyframes lds-dual-ring {
   0% {
-    transform: rotate(0deg);
             transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
