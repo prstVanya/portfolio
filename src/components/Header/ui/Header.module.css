@@ -1,0 +1,101 @@
+.header {
+  width: 89.745%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 5.195%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  padding-top: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.8%;
+}
+
+.links {
+  width: 36.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 4.1%;
+  width: 100%;
+}
+
+.block {
+  margin: 0;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+
+.to {
+  font-family: var(--fonts-jetbrains-medium);
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  color: var(--text-color-light);
+  transition: color .2s ease;
+  cursor: pointer;
+}
+
+.to.dark {
+  color: var(--text-color-dark);
+}
+
+.to:hover {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: var(--text-hover-light);
+}
+
+.to.active {
+  color: var(--text-header-active);
+}
+
+.logo {
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: .7;
+}
+
+.navButton {
+  display: none;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+@media screen and (width <= 602px) {
+  .nav {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .navButton {
+    display: block;
+  }
+}

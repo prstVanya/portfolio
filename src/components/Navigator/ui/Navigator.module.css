@@ -1,0 +1,84 @@
+.navigator {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  min-height: 100vh;
+  background-color: rgb(0 0 26);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1001;
+  overflow: hidden;
+  transition: opacity .4s ease-in-out, visibility .4s ease-in-out, background-color .3s ease;
+}
+
+.navigator.dark {
+  background-color: #e7e7e7;
+}
+
+.navigator.open {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
+
+.navigator.open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 50%);
+  backdrop-filter: blur(10px); 
+  z-index: -1; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 50px;
+  gap: 16px;
+  width: 100%;
+}
+
+.href {
+  font-size: 14px;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-family: var(--fonts-jetbrains-regular);
+  text-transform: uppercase;
+}
+
+.href.darkHref {
+  color: var(--text-color-dark);
+}
+
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 32px;
+  right: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.close:hover {
+  opacity: .3;
+}
+
+.but {
+  margin: 0;
+}

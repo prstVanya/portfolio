@@ -1,0 +1,31 @@
+.button {
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: border .1s cubic-bezier(.4, 0, .2,1);
+}
+
+.button.hed {
+  display: flex;
+}
+
+.button:hover {
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button.dark:hover {
+  border: 2px solid black;
+}
+
+@media screen and (width <= 602px) {
+  .button.hed {
+    display: none;
+  }
+}

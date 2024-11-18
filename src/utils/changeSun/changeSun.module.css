@@ -1,0 +1,11 @@
+.svg {
+  border: none;
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}

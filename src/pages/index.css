@@ -1,0 +1,31 @@
+@import url('../vendor/reset.css');
+@import url('../vendor/globals/globals.css');
+
+.app {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color-dark);
+  color: var(--text-color-light);
+  position: relative;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.dark {
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+}
+
+.test {
+  font-family: var(--fonts-jetbrains-regular);
+  font-size: 34px;
+}
