@@ -6,7 +6,7 @@ import { Footer } from 'components/Footer';
 import {
   Suspense, useEffect, useState, useRef, RefObject,
 } from 'react';
-import Navigator from 'components/Navigator/ui/Navigator';
+import { Navigator } from 'components/Navigator';
 import { PageLoader } from 'components/PageLoader/PageLoader';
 
 const App = () => {

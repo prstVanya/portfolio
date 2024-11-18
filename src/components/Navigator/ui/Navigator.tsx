@@ -14,7 +14,7 @@ interface INavigatorData {
   scrollInto: (id: string) => void;
 }
 
-const Navigator = ({
+export const Navigator = ({
   className, isTrue, toogleButton, isOpen, onClose, isDark, scrollInto,
 }: INavigatorData) => {
   return (
@@ -63,5 +63,3 @@ const Navigator = ({
     </div>
   );
 };
-
-export default Navigator;
