@@ -41,11 +41,6 @@ export const Home = ({ className, refer }: IHomeData) => {
             })}
           </div>
         </Typist>
-        <div className={classNames(cls.canvas, { [cls.active]: isCanvasVisible }, [])}>
-            <Canvas className={classNames(cls.camare, {}, [])} camera={{ position: [0, 7, 5] }}>
-              <ThreeModel />
-            </Canvas>
-        </div>
       </div>
     </section>
   );
