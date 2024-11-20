@@ -19,7 +19,10 @@ ___
 ___
 
 ## Ссылка на деплой приложения
-Lint githubPages: ''
+Lint githubPages: 
+```
+https://prstvanya.github.io/portfolio/
+```
 ___
 
 ## Используемые технологии
