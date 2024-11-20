@@ -7,6 +7,8 @@ export function buildPlugins({ paths, isDev }: BuildOptions): Configuration['plu
   return [
     new HtmlWebpackPlugin({
       template: paths.html,
+      filename: 'index.html',
+      favicon: 'public/favicon.ico',
     }),
     isDev && new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({
