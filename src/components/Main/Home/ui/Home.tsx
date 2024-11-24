@@ -1,7 +1,5 @@
 import { classNames } from 'utils/classNames/classNames';
 import Typist from 'react-typist-component';
-import { Canvas } from '@react-three/fiber';
-import ThreeModel from 'utils/threeModel/threeModel';
 import { RefObject, useEffect, useState } from 'react';
 import cls from './Home.module.css';
 import { textData } from '../models/textsForHome';

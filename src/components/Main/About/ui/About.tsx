@@ -29,13 +29,13 @@ export const About = ({ className, isDark, refer }: IAboutData) => {
             <span className={classNames(cls.span, {}, [])}>
               prstvanya/aboutme
               <span className={classNames(cls.main, {}, [])}>
-                {' '}(main)
+                {`${'\u00A0'}(main)`}
               </span> $
             </span>
-            {' '}
+            {`${'\u00A0'}
               Hello, my name is Vanya and i'm front-end developer from Crimea. I love my work
               and i enjoy to coding and fix the problems. My hobbie its play video games,
-              reading the books and boxing :)
+              reading the books and boxing :)`}
             </p>
             <a
               href='https://github.com/VanyaGachist2'
