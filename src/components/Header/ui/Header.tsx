@@ -12,11 +12,10 @@ interface HeaderProps {
   openNav: () => void;
   isDark: boolean;
   scrollPage: (id: string) => void;
-  activeSection: string;
 }
 
 export const Header = ({
-  className, toogleButton, isTrue, openNav, isDark, scrollPage, activeSection,
+  className, toogleButton, isTrue, openNav, isDark, scrollPage,
 }: HeaderProps) => {
   return (
     <header className={classNames(cls.header, {}, [className])}>
@@ -47,7 +46,6 @@ export const Header = ({
                     cls.to,
                     {
                       [cls.dark]: isDark,
-                      [cls.active]: activeSection === a.to,
                     },
                     [],
                   )}

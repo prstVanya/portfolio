@@ -38,7 +38,7 @@ export const About = ({ className, isDark, refer }: IAboutData) => {
               reading the books and boxing :)`}
             </p>
             <a
-              href='https://github.com/VanyaGachist2'
+              href='https://github.com/prstVanya'
               className={classNames(cls.text, {}, [cls.link])}>
                 link to github
             </a>

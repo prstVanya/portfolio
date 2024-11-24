@@ -42,6 +42,7 @@ module.exports = {
       'no-param-reassign': 0,
       'array-callback-return': 0,
       'consistent-return': 0,
+      "no-nested-ternary": "off",
       "react/no-unknown-property": [
         "error",
         {

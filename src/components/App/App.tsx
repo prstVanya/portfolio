@@ -12,7 +12,6 @@ import { PageLoader } from 'components/PageLoader/PageLoader';
 const App = () => {
   const [isDark, setIsDark] = useState<boolean>(false);
   const [openNav, setOpenNav] = useState<boolean>(false);
-  const [activeSection, setActiveSection] = useState<string>('');
 
   const scrollToAboutPage = useRef<HTMLElement>(null);
   const scrollToHomePage = useRef<HTMLElement>(null);
@@ -69,7 +68,6 @@ const App = () => {
             isDark={isDark}
             openNav={handleOpenNav}
             isTrue={isDark}
-            activeSection={activeSection}
             toogleButton={handleToogleButton}
           />
           <Main
