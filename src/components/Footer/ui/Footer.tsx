@@ -45,7 +45,8 @@ export const Footer = ({ className }: IFooterData) => {
       <a
         className={classNames(cls.resume, {}, [])}
         target='_blank'
-        href='https://positive-reptile-e2d.notion.site/111b52bac8bb801982c2f25e14c14d70' rel="noreferrer"
+        href='https://positive-reptile-e2d.notion.site/111b52bac8bb801982c2f25e14c14d70'
+        rel="noreferrer"
       >
         <p className={classNames(cls.textB, {}, [])}>Resume</p>
         <Download />
