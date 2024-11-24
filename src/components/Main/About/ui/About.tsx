@@ -35,7 +35,7 @@ export const About = ({ className, isDark, refer }: IAboutData) => {
             {' '}
               Hello, my name is Vanya and i'm front-end developer from Crimea. I love my work
               and i enjoy to coding and fix the problems. My hobbie its play video games,
-              reading the books and warhammer 40k :)
+              reading the books and boxing :)
             </p>
             <a
               href='https://github.com/VanyaGachist2'
